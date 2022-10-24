@@ -9,7 +9,7 @@ window.onload = function(){
     let nombre = prompt('Ingrese su nombre');
     console.log(nombre);
     if(nombre !=''){
-        subtitulo.innerHTML += nombre;
+        subtitulo.innerHTML +=  nombre;
     }else{
         subtitulo.innerHTML += 'INVITADO';
     }
@@ -31,11 +31,23 @@ window.onload = function(){
     
 
     container.style.display = 'block';
-}
 
-let menulateral = document.querySelector("menu")
+
+let menulateral = document.querySelector("#menu")
 let logo = document.querySelector(".logoDH")
 
-logo.addEventListener("click", (e)=>{
-    menulateral.classList.toggle("mostrar")
-})
+logo.addEventListener('click', (e) => {
+    e.preventDefault();
+    menulateral.classList.toggle('mostrar');
+    
+     
+    
+});
+
+logo.addEventListener('mouseout', () => {
+        
+    menulateral.classList.toggle('mostrar');
+    
+});
+
+}
