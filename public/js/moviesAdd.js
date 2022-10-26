@@ -115,23 +115,6 @@ window.onload = function(){
     
 }
 
-const formAdd = document.querySelector("#formulario form");
-
-  formAdd.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    console.log("Formulario");
-
-    if (inputTitulo.value.trim() == "") {
-      alert("esta vacio");
-    }
-
-    if (true) {
-      // e.preventDefault();
-      formAdd.submit();
-    }
-  });
-};
 /* OTRAS FORMAS DE HACER LO MISMO PERO NO ES TAN RECOMENDABLE PARA LA MANTENCIÓN DEL CÓDIGO */
 ////////////////////////////////////////////////////////////////////////
 /**
