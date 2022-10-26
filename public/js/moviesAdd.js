@@ -11,7 +11,7 @@ window.onload = function(){
     formulario.classList.add('fondoCRUD');
 
 
-    boton.addEventListener("mouseover", (e) => {
+/*     boton.addEventListener("mouseleave", (e) => {
         
         boton.style.color = "red"
                 e.preventDefault()
@@ -25,8 +25,15 @@ window.onload = function(){
                 e.preventDefault()
 
 
+    }) */
+
+    titulo.addEventListener("mouseover", ()=>{
+        titulo.style.color = "red"
     })
 
+    titulo.addEventListener("mouseleave", ()=>{
+        titulo.style.color = "black"
+    })
 
 
 }

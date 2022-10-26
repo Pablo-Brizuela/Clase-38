@@ -7,7 +7,7 @@ window.onload = function(){
     if(modo){
         body.style.backgroundColor = '#7f7f7f'
         body.classList.add('fondoMoviesList');
-    } */
+    }  */
     
     /* console.log(body); */
     moviesListTitulo.innerHTML = 'LISTADO DE PELÍCULAS';
@@ -15,7 +15,7 @@ window.onload = function(){
     moviesListTitulo.style.backgroundColor = 'teal';
     moviesListTitulo.style.padding = '20px';
     
-    let logo = document.querySelector(".logoDH")
+    let logo = document.querySelector("figure img")
 
     logo.addEventListener("mouseout", () => {
         
